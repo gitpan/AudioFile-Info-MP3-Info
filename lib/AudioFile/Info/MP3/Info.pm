@@ -1,3 +1,20 @@
+#
+# $Id: Info.pm,v 1.2 2005/03/01 13:03:24 dave Exp $
+#
+
+=head1 NAME
+
+AudioFile::Info::MP3::Info - Perl extension to get info from MP3 files.
+
+=head1 DESCRIPTION
+
+This is a plugin for AudioFile::Info which uses MP3::ID3Lib to get
+data about MP files.
+
+See L<AudioFile::Info> for more details.
+
+=cut
+
 package AudioFile::Info::MP3::Info;
 
 use 5.006;
@@ -7,7 +24,7 @@ use Carp;
 
 use MP3::Info;
 
-our $VERSION = sprintf "%d.%02d", '$Revision: 1.1.1.1 $ ' =~ /(\d+)\.(\d+)/;
+our $VERSION = sprintf "%d.%02d", '$Revision: 1.2 $ ' =~ /(\d+)\.(\d+)/;
 
 my %data = (artist => 'ARTIST',
             title  => 'TITLE',
@@ -41,17 +58,6 @@ sub AUTOLOAD {
 
 1;
 __END__
-
-=head1 NAME
-
-AudioFile::Info::MP3::Info - Perl extension to get info from MP3 files.
-
-=head1 DESCRIPTION
-
-This is a plugin for AudioFile::Info which uses MP3::ID3Lib to get
-data about MP files.
-
-See L<AudioFile::Info> for more details.
 
 =head1 AUTHOR
 
