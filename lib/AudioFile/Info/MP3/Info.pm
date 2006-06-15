@@ -1,5 +1,5 @@
 #
-# $Id: Info.pm,v 1.2 2005/03/01 13:03:24 dave Exp $
+# $Id: Info.pm,v 1.3 2006/06/15 20:51:16 dave Exp $
 #
 
 =head1 NAME
@@ -24,7 +24,7 @@ use Carp;
 
 use MP3::Info;
 
-our $VERSION = sprintf "%d.%02d", '$Revision: 1.2 $ ' =~ /(\d+)\.(\d+)/;
+our $VERSION = sprintf "%d.%02d", '$Revision: 1.3 $ ' =~ /(\d+)\.(\d+)/;
 
 my %data = (artist => 'ARTIST',
             title  => 'TITLE',
@@ -58,6 +58,13 @@ sub AUTOLOAD {
 
 1;
 __END__
+
+=head1 METHODS
+
+=head2 new
+
+Creates a new object of class AudioFile::Info::MP3::Info. Usually called
+by AudioFile::Info::new.
 
 =head1 AUTHOR
 
