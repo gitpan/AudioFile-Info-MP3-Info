@@ -1,5 +1,5 @@
 #
-# $Id: Info.pm,v 1.3 2006/06/15 20:51:16 dave Exp $
+# $Id: Info.pm 11 2008-04-20 07:23:17Z dave $
 #
 
 =head1 NAME
@@ -24,7 +24,7 @@ use Carp;
 
 use MP3::Info;
 
-our $VERSION = sprintf "%d.%02d", '$Revision: 1.3 $ ' =~ /(\d+)\.(\d+)/;
+our $VERSION = sprintf "%d", '$Revision: 11 $ ' =~ /(\d+)/;
 
 my %data = (artist => 'ARTIST',
             title  => 'TITLE',

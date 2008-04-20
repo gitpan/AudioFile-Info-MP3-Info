@@ -1,6 +1,6 @@
 ---
 name: AudioFile-Info-MP3-Info
-version: 1.03
+version: 1.04
 author:
   - 'Dave Cross, E<lt>dave@dave.org.ukE<gt>'
 abstract: Perl extension to get info from MP3 files.
@@ -17,10 +17,11 @@ dynamic_config: 1
 provides:
   AudioFile::Info::Build:
     file: lib/AudioFile/Info/Build.pm
+    version: 11
   AudioFile::Info::MP3::Info:
     file: lib/AudioFile/Info/MP3/Info.pm
-    version: 1.03
-generated_by: Module::Build version 0.2801
+    version: 11
+generated_by: Module::Build version 0.2808
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
   version: 1.2
